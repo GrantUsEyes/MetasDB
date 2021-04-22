@@ -10,5 +10,5 @@
 #
 # MetasDB
 #
-# This is the final project repo for BIOI 4850. The goal of this project is to gain a greater understanding of databases and how they work while also expanding programming skills overall. This project uses an old project of mine, simply labelled "tumorproject"  to draw data to store in the database. The database then allows for the user to query and analyze information from the database. To use this DB please visit http://odin.unomaha.edu/~zwright/metasDB.php
+# This is the final project repo for BIOI 4850. The goal of this project is to gain a greater understanding of databases and how they work while also expanding my programming skills overall. This project uses an old project of mine, simply labelled "tumorproject"  to draw data to store in the database. The database then allows for the user to query and analyze information from the database. To use this DB please visit http://odin.unomaha.edu/~zwright/metasDB.php
 # Partners: NONE
