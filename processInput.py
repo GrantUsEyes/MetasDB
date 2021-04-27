@@ -51,7 +51,7 @@ try: #Grabs relevant input and outputs a formatted sql file tailored to the simu
             outFile.write(var + " varchar(5) NOT NULL,\n")
     outFile.write("PRIMARY KEY(run_ID, lsteps)\n);\n" + "LOCK TABLES MetasDB WRITE;\n" + "INSERT INTO MetasDB VALUES " + inserts)
     outFile.close()
-    print('Finished! Your .sql file can now be queried.')
+    print('Finished!')
 
 
     

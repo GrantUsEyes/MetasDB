@@ -1,23 +1,27 @@
 <!DOCTYPE HTML>
 <html>
-	<h4>MetasDB FAQ page</h4>
+	<h2>MetasDB FAQ page</h2><br>
 	<body>
-		<h2>What is "the simulation" and how does it work?</h2><br>
+		<h4>What is "the simulation" and how does it work?</h4>
 		<p>The simulation is a simulation built by Zackary Wright in Netlogo which features an organ represented by a mass of green dots on the grid (called patches) and one tumor cell represented by one red dot on the grid (called a "turtle". The simulation allows the user to initialize how high the tumor divide, metastasis and seeding probilities are along with whether or not CAFs are to be included in the simulation via sliders. The sliders start at a 0 initial chance and can go up to 1. Because cancer is more likely to spread over time naturally the simulation will automatically increase these probabilities over time.(see figure 1)</p><br>
 		<img src="images/figure1.PNG" width="500" height="600"><br>
 		<p>Fig. 1</p><br>
-		<h2>How do you start the simulation?</h2><br>	
+		<h4>How do you start the simulation?</h4>	
 		<p>After the user initializes their variables, the user simply presses "setup" and "go". The simulation then graphs and keeps count of how many CAFs and tumor cells are on in the simulation as it runs. You can automate this process by clicking tools, then behavior space in the dropdown menu where you can then customize your run and have the simulation try different values of each slider as it goes.(see figure 2)</p><br>
-		<img src="images/figure2.jpg" width="500" height="600"><br>
-		<h2>Why are the .csv files output by the simulation so large?</h2><br>
+		<img src="images/Figure2.jpg" width="500" height="600"><br>
+		<p>Fig. 2</p><br>
+		<h4>Why are the .csv files output by the simulation so large?</h4>
 		<p>In order to have a more robust dataset and therefore more accurate data, the behaviorspace model is set so that each slider controlled variable is initialized to only .1 chance and increments .25 every run until it hits 1. The simulation then does this with CAFs present and absent, while keeping track of the count of tumor cells and CAFs present for each. (see figure 3)</p><br>
 		<img src="images/figure3.PNG" width="500" height="600"><br>
-		<h2>How do I interpret these results?</h2><br>
+		<p>Fig. 3</p><br>
+		<h4>How do I interpret these results?</h4>
 		<p>The results given on the MetasDB page are averages for comparision purposes between the overall time (measured in steps) it takes for the original tumor to grow and metastasize between the simulation overall, the simulation with CAFs present andthe simulation with CAFs absent, along with the average number of CAFs present in the simulation when the CAFs are set to on. It is important to note for the purposes of this simulation, the MAX number of timesteps in each run can only go up to 2500 steps. At 2500 steps the run is terminated and moves on to the next run. Because of this, at 2500 steps the "organism" in the simulation can essentially be considered deceased due to other causes rather than the metastasis of tumor measured in the simulation.(bottom left figure 3)</p><br>
-		<h2>Other things to note:</h2><br>
+		<h4>Other things to note:</h4>
 		<p>It is important to note for the purposes of this simulation, the MAX number of timesteps in each run can only go up to 2500 steps. At 2500 steps the run is terminated and moves on to the next run. Because of this, at 2500 steps the "organism" in the simulation can essentially be considered deceased due to other causes rather than the metastasis of tumor measured in the simulation. This is to prevent the simulation from supplying too much data or taking far to long to metastasize, as running a Behaviorspace module can already take quite a bit of time.</p><br>
 		<p>This simulation is not all encompassing! The simulation only measures and takes into account the interactions between CAFs and tumor cells and postulate how the CAFs may modify a tumors probability to divide, metastasize and seed. It does not take into account other interactions going on, within and on the outside of, the organ cell. The user's modification of the probability sliders is essentially modifiying the "organism's" enviornment.</p><br>
-		<a href="odin.unomaha.edu/~zwright/metasDB.php">Take me back!</a>
+		<a href="metasDB.php">Take me back!</a>
+</body>
+<html>
 
 
 
