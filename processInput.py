@@ -31,7 +31,6 @@ try: #Grabs relevant input and outputs a formatted sql file tailored to the simu
     fileIn = open(inName, 'r')
 
     for line in fileIn:
-        if lineNum % 10000 == 0:
         if '\n' in line:
             line = line[:-1]
             if lineNum == 1:
@@ -46,11 +45,11 @@ try: #Grabs relevant input and outputs a formatted sql file tailored to the simu
     outFile.write("USE zwright;\n" + "DROP TABLE IF EXISTS MetasDB;\n\n" + "CREATE TABLE MetasDB (\n")
 
     for var in varList:
-        if var != "TRUE" or var != "FALSE":
-            outFile.write(var + " int(5),\n")
+        if var != "CAFS_toggled":
+            outFile.write(var + " int(5) NOT NULL,\n")
         else:
-            outFile.write(var + " varchar(5),\n")
-    outFile.write("PRIMARY KEY(run_ID, steps)\n);\n" + "LOCK TABLES MetasDB WRITE;\n" + "INSERT INTO MetasDB VALUES " + inserts)
+            outFile.write(var + " varchar(5) NOT NULL,\n")
+    outFile.write("PRIMARY KEY(run_ID, lsteps)\n);\n" + "LOCK TABLES MetasDB WRITE;\n" + "INSERT INTO MetasDB VALUES " + inserts)
     outFile.close()
     print('Finished! Your .sql file can now be queried.')
 
