@@ -1,5 +1,5 @@
 # Name:  Zackary Wright
-# Class: BIOI 4850, Spring 2021
+# Class: BIOI 4870, Spring 2021
 # Assignment #: FINAL PROJECT
 # Due date: 4/27/21
 #
