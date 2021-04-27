@@ -30,10 +30,8 @@ try: #Grabs relevant input and outputs a formatted sql file tailored to the simu
     
     fileIn = open(inName, 'r')
 
-    print("\nProcessing your .sql file, the .csv is large so it may take some time")
     for line in fileIn:
         if lineNum % 10000 == 0:
-            print('working on it...\n')
         if '\n' in line:
             line = line[:-1]
             if lineNum == 1:
