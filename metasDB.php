@@ -8,7 +8,7 @@
 		<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
 			Which Simulation data would you like to test (1/2/3)?:  			<input type="text" id="sim" name="sim"><br><br>
 			<button type="submit" value="Submit">Submit</button><br><br>
-			<p style="color:red;">BE ADVISED: This site will convert a .csv file into a .sql file to be analyzed every time a simulation is chosen, to preserve memory space in the server. The contents of the .csv files are quite large and therefore processing these documents may take a little bit of time. If this is your first time here it is highly recommended that you read the<a href="odin.unomaha.edu/~zwright/metasFAQ.php">FAQ</a></p>
+			<p style="color:red;">BE ADVISED: This site will convert a .csv file into a .sql file to be analyzed every time a simulation is chosen, to preserve memory space in the server. The contents of the .csv files are quite large and therefore processing these documents may take a little bit of time. If this is your first time here it is highly recommended that you read the<a href="odin.unomaha.edu/~zwright/metasFAQ.html">FAQ</a></p>
 		</form>
 <?php //Runs the python script processInput.py with the input depending on the chosen simulation and then queries the system to analyze the data from the simulation.
 if($_SERVER["REQUEST_METHOD"] == "POST") {
