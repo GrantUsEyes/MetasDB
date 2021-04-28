@@ -1,4 +1,4 @@
-run_ID,seed_probability,divide_probability,CAFS_toggled,metastasis_probability,lsteps,tumor_count,CAF_coount
+run_ID,seed_probability,divide_probability,CAFS_toggled,metastasis_probability,lsteps,tumor_count,CAF_count
 14,0.1,0.1,FALSE,0.25,0,1,0
 3,0.1,0.1,TRUE,0.25,0,1,0
 10,0.1,0.1,TRUE,1,0,1,0
